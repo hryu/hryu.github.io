@@ -3,10 +3,6 @@ layout: post
 title: ARM Domains and Access Permission Control on Linux
 ---
 
-# ARM Domains and Access Permission Control on Linux
-
----
-
 ## Contents
 
 1. [Introduction][section-introduction]
