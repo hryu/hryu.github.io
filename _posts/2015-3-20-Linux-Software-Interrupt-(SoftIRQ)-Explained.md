@@ -4,6 +4,7 @@ title: Linux Software Interrupt (SoftIRQ) Explained
 ---
 
 ## Contents
+
 1. [Introduction][section-intro]  
 2. [Opening SoftIRQ][section-open]  
 3. [Raising SoftIRQ][section-raise]  
