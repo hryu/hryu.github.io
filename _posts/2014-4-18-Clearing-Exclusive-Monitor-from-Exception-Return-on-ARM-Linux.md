@@ -3,10 +3,6 @@ layout: post
 title: Clearing Exclusive Monitor from Exception Return on ARM Linux
 ---
 
-# Clearing Exclusive Monitor from Exception Return on ARM Linux
-
----
-
 ## Contents
 
 1. [Introduction][section-introduction]  
