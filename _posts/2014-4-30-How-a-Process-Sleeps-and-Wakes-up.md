@@ -323,7 +323,7 @@ rbtree 에 존재하지 않는다) `prev->on_rq` 를 0 으로 만듦으로써
 `signal_wake_up_state()` 는 프로세스에 시그널을 보낼 때 사용되며 state 에 `TASK_WAKEKILL`/`__TASK_TRACED` 혹은 0 이 전달되며 전자의 경우 해당 플래그가 설정된 태스트들을 추가로 깨울 수 있으며 후자의 경우 
 `TASK_INTERRUPTIBLE` 인 프로세스만을 깨울 수 있다.
 
-| 태스크의 수면 상태와 중단 가능한 시그널 ||
+| 태스크의 수면 상태와 중단 가능한 시그널|
 | state                | signal   |
 |----------------------|----------|
 | TASK_INTERRUPTIBLE   | all      |
