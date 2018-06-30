@@ -5,14 +5,14 @@ title: Setting Page Table Entry on ARMv7
 
 ## Contents
 
-1. [Introduction][section-introduction]
-2. [Linux Version Format][section-linux-version-format]
-3. [ARM Version Format][section-arm-version-format]
-4. [Setting Page Table Entry][setting-page-table-entry]
+1. [Introduction](#introduction)
+2. [Linux Version Format](#linux-version-format)
+3. [ARM Version Format](#arm-version-format)
+4. [Setting Page Table Entry](#setting-page-table-entry)
 
 ---
 
-## 1. Introduction[section-introduction]
+## 1. Introduction
 ARM 리눅스에서 사용하는 페이지 테이블 엔트리포맷에 대해 알아보고 이에 따라
 어떻게 ARM 페이지 테이블 엔트리에 설정되게 되는지 알아본다.
 
@@ -24,7 +24,7 @@ translation table format descriptors 을 참고.
 
 ---
 
-## 2. Linux Version Format [section-linux-version-format]
+## 2. Linux Version Format
 
 **Normal (F == 0 and P == 1)**  
 
@@ -63,7 +63,7 @@ translation table format descriptors 을 참고.
 
 ---
 
-## 3. ARM Version Format [section-arm-version-format]
+## 3. ARM Version Format
 
     |31                     12|11|10| 9|8   6|5  4| 3| 2| 1| 0|
     | page frame number       |nG|S |A2| TEX |AP10| C| B| 1|XN|
@@ -76,7 +76,7 @@ XN          : execute never
 
 ---
 
-## 4. Setting Page Table Entry [setting-page-table-entry]
+## 4. Setting Page Table Entry
 
 리눅스 버전의 pte 를 저장한 후, 이를 참고하여 arm hw 버전의 pte를 만들어
 설정하는 `set_pte_at()` 함수의 ARMv7 구현을 알아본다.
