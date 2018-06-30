@@ -8,7 +8,7 @@ title: Setting Page Table Entry on ARMv7
 1. [Introduction](#1.-introduction)
 2. [Linux Version Format](#2.-linux-version-format)
 3. [ARM Version Format](#3.-arm-version-format)
-4. [Setting Page Table Entry](#4-setting-page-table-entry)
+4. [Setting Page Table Entry](#4.1-setting-page-table-entry)
 
 ---
 
@@ -76,7 +76,7 @@ XN          : execute never
 
 ---
 
-## 4. Setting Page Table Entry
+## 4.1. Setting Page Table Entry
 
 리눅스 버전의 pte 를 저장한 후, 이를 참고하여 arm hw 버전의 pte를 만들어
 설정하는 `set_pte_at()` 함수의 ARMv7 구현을 알아본다.
