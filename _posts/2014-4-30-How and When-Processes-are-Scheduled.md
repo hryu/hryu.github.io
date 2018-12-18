@@ -5,7 +5,7 @@ title: How and When Processes are Scheduled
 
 ## Contents
 
-1. [Introduction][section-introduction]  
+1. [Introduction](#section-introduction)  
 2. [Setting TIF_NEED_RESCHED flag][section-setting-tif-flag]  
 2.1. [Mark Task to be Scheduled][section-mark-task-sched]  
 2.2. [Tick Based Activities][section-tick-base-activity]  
